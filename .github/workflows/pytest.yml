@@ -1,4 +1,4 @@
-name: needleman-wunsch algorithm
+name: regression
 on:
   push:
     branches:
