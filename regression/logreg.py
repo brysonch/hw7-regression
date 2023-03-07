@@ -83,7 +83,7 @@ class BaseRegressor():
 
             # Update iteration
             iteration += 1
-    
+
     def plot_loss_history(self):
 
         # Make sure training has been run
@@ -148,7 +148,7 @@ class LogisticRegressor(BaseRegressor):
         """
 
         # Return binary cross entropy loss
-        return -np.mean(y_true * np.log(y_pred) + (1 - y_true) * np.log(y_pred))
+        return -np.mean(y_true * np.log(y_pred) + (1 - y_true) * np.log(1- y_pred))
         
     def calculate_gradient(self, y_true, X) -> np.ndarray:
         """
